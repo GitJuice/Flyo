@@ -1,0 +1,373 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Open Sans', sans-serif;}
+
+:root{
+    --clr-primary-into-and-email-bg:  hsl(217, 28%, 15%);    /*(intro and email sign up background)*/
+    --clr-primary-main-bg: hsl(218, 28%, 13%);               /*(main background):*/
+    --clr-primary-footer-bg:  hsl(216, 53%, 9%);             /*(footer background*/
+    --clr-primary-testimonials-bg: hsl(219, 30%, 18%);       /*(testimonials background)*/
+
+    --clr-accent-cyan: hsl(176, 68%, 64%);                   /*(inside call-to-action gradient*/
+    --clr-accent-blue: hsl(198, 60%, 50%);                   /*(inside call-to-action gradient*/
+    --clr-accent-red: hsl(0, 100%, 63%);                     /*(error)*/
+
+    --clr-neutral: hsl(0, 0%, 100%);
+
+    --font-raleway: 'Raleway', sans-serif;            /*Headings, Call-to-actions, Header Navigation*/
+}
+
+body{
+    background: url(../images/bg-curvy-mobile.svg),
+    var(--clr-primary-main-bg);
+    background-position: fixed;
+    color: var(--clr-neutral);
+}
+
+h1, h2, h3{
+    font-family: var(--font-raleway);
+}
+
+.btn{
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to right, var(--clr-accent-cyan), var(--clr-accent-blue));
+    padding: .6rem 4rem;
+    border-radius: 30px;
+}
+
+.big-img{
+    height: 236px;
+    margin: 2rem;
+}
+/* ***********************Navbar Starts************************************* */
+.header{
+    display: flex;
+    flex-direction: row;
+}
+
+#logo{
+    width: 90px;
+    margin: 1.2rem .5rem;
+    padding: .5rem;
+}
+
+.navbar{
+    position: relative;
+    top: 38px;
+    left: 45px;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    margin: .6rem;
+}
+
+/* *********************************Navabar Ends************************* */
+
+/* ***********************************Middle Section Starts******************** */
+
+
+.intro-text{
+    text-align: center;
+    margin: 2rem;
+}
+
+
+.intro-text p{
+    margin: 1rem 0 2rem 0;
+}
+
+/* ***********************************Middle Section Ends******************** */
+
+/* ***************************************Card Section Starts********************** */
+
+.card-sec{
+    display: flex;
+    flex-direction: column;
+    margin: 6em 0;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2rem;
+}
+
+.card h3{
+    margin: 1rem 0;
+}
+
+
+/* ***************************************Card Section Ends********************** */
+
+/* *****************************************Productivity Section Starts****************** */
+
+.pro-text{
+    margin: 1rem;
+}
+
+.pro-text p{
+    margin: 1rem 0;
+}
+
+#fly{
+    color: var(--clr-accent-cyan);
+}
+
+/* *****************************************Productivity Section Ends****************** */
+
+/* *********************************************Testimonials Starts************************** */
+.testimonials{
+    margin: 5rem 0;
+}
+
+.testi{
+    margin: 1.5rem;
+    background-color: var(--clr-primary-testimonials-bg);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.testi p{
+    font-size: .9rem;
+}
+
+.profile{
+    display: flex;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+.testi-img{
+    height: 30px;
+    border-radius: 50%;
+    margin: .5rem 1rem 0 0;
+}
+
+.profile h3{
+    font-size: .9rem;
+    margin: .3rem;
+}
+
+.profile p{
+    font-size: .6rem;
+    margin: .3rem;
+}
+
+
+/* *********************************************Testimonials Ends************************** */
+
+/* ******************************************Form Starts************************************** */
+.form{
+    background: var(--clr-primary-into-and-email-bg);
+    height: 380px;
+    text-align: center;
+    margin: 3rem 1rem;
+    box-shadow: 3px 3px 10px black;
+    border-radius: 15px;
+}
+
+.container{
+    margin: 1rem;
+    padding: 0.6rem;
+}
+
+.container h1{
+    padding: 1rem;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input form input{
+    margin: 1rem 0;
+   padding: .5rem 4rem;
+   border-radius: 25px;
+}
+
+#form-btn{
+    margin: 1rem;
+    padding: .5rem 5rem;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to right, var(--clr-accent-cyan), var(--clr-accent-blue));
+    border-radius: 30px;
+    font-family: var(--font-raleway);
+    overflow: auto;
+}
+
+/* ******************************************Form Ends************************************** */
+
+/* *******************************************Contact Us Starts********************************* */
+
+
+/* *******************************************Contact Us Ends********************************* */
+
+/* **********************************************Footer Starts****************************** */
+
+/* **********************************************Footer Ends****************************** */
+
+@media only screen and (min-width:1000px) {
+
+    body{
+        background: url(../images/bg-curvy-desktop.svg)no-repeat center,
+                    var(--clr-primary-main-bg);
+        background-attachment: fixed;
+    }
+
+    .big-img{
+        height: 500px;
+        margin: 9em 0 0 6em;
+    }
+    /* ****************************Navabar************************************** */
+
+    #logo{
+        width: 200px;
+        margin: 2rem;
+    }
+
+    .navbar{
+        top: 5em;
+        left: 35em;
+    }
+
+    .navbar ul li a{
+        margin: 2em;
+    }
+
+    /* ***************************Middle Section************************************ */
+
+    .middle{
+        margin: 0 20em;
+    }
+
+    /* ****************************Card Section************************************** */
+
+    .card-sec{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 5em;
+    }
+
+    /* ***************************Productivity**************************************** */
+
+    .productive{
+        display: flex;
+        padding: 5em;
+    }
+
+    #pro-img{
+        margin: 0;
+    }
+
+    .pro-text{
+        padding: 3rem;
+        margin: 3rem 0;
+    }
+
+    #arrow-img{
+        height: 30px;
+    }
+
+    #fly{
+        font-size: 1.5rem;
+    }
+
+    /* *******************************Testimonials*********************************** */
+
+    .testimonials{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* **************************************Froms*************************************** */
+
+    .form{
+        margin: 0 12rem;
+        width: 900px;
+        height: 300px;
+    }
+    
+    .form-input{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .form-input form input{
+        padding: 1rem 10rem;
+    }
+
+    .img-span{
+        margin: 2rem;
+    }
+
+    /* **********************************Footer****************************************** */
+    .footer{
+        margin: 2rem;
+    }
+
+    #contact-logo{
+        margin: 2rem;
+    }
+
+    .contact-info{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .con-info{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        height: 200px;
+        padding: 2rem;
+    }
+    .con-info p{
+        margin: 0;
+    }
+
+    #image{
+        height: 30px;
+    }
+
+    .links{
+        margin: 1rem 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+    }
+
+    .list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list a{
+        text-decoration: none;
+        color: white;
+        margin: .5rem;
+    }
+
+    .bottom{
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        right: 100px;
+    }
+
+    .icon{
+        margin: 1rem;
+    }
+}
